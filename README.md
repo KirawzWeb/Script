@@ -1,2 +1,2 @@
-# cheat
-simple script for games 
+# My robloxScript exploit
+# French gang gang
