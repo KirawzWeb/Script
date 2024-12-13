@@ -1,5 +1,5 @@
 --[[
-full made by underlord
+full made by dexinstri
 shit obfuscator
 old version
 dsc.gg/ciagov
