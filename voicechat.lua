@@ -3,8 +3,6 @@
     Made by Layer7
     Open source code
     dsc.gg/ciagov
-    DO NOT USE THIS FOR MALICIOUS PURPOSES
-    SilentSpy is a tool for educational purposes, not intended for malicious activities.
     SilentSpy is invulnerable, executing actions with unmatched stealth and efficiency
 
 ]]
