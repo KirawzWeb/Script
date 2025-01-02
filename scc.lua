@@ -3,6 +3,30 @@
 --[[$$ 
     print("loading the script...")
     print("bloxfruit")
+getgenv().autofarm = true
+
+if getgenv().autofarm then
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+    while getgenv().autofarm do
+        for _, bandit in ipairs(workspace.Enemies:GetChildren()) do
+            if bandit:IsA("Model") and bandit.Name == "Bandit" then
+                local humanoid = bandit:FindFirstChild("Humanoid")
+                local rootPart = bandit:FindFirstChild("HumanoidRootPart")
+
+                if humanoid and rootPart and humanoid.Health > 0 then
+                    while humanoid.Health > 0 and getgenv().autofarm do
+                        humanoidRootPart.CFrame = rootPart.CFrame + Vector3.new(0, 10, 0)
+                        wait(0.1)
+                    end
+                end
+            end
+        end
+        wait(0.1) 
+    end
+end
     bloxfruit == autofarm = true
 png == target
 
@@ -19,17 +43,6 @@ killaura.fkill == true or getgenv().wait()
 press.attack mob
 
 
-
-
-
-
-
-
-
-
-
-
-
 noprint("errror")
 
 
@@ -43,6 +56,80 @@ png.attack.popnggpng.attack.popnggpng.attack.popngg
 
 png.attack.popngg
 
+
+
+getgenv().autofarm = true
+
+if getgenv().autofarm then
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+    while getgenv().autofarm do
+        for _, bandit in ipairs(workspace.Enemies:GetChildren()) do
+            if bandit:IsA("Model") and bandit.Name == "Bandit" then
+                local humanoid = bandit:FindFirstChild("Humanoid")
+                local rootPart = bandit:FindFirstChild("HumanoidRootPart")
+
+                if humanoid and rootPart and humanoid.Health > 0 then
+                    while humanoid.Health > 0 and getgenv().autofarm do
+                        humanoidRootPart.CFrame = rootPart.CFrame + Vector3.new(0, 10, 0)
+                        wait(0.1)
+                    end
+                end
+            end
+        end
+        wait(0.1) 
+    end
+end
+getgenv().autofarm = true
+
+if getgenv().autofarm then
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+    while getgenv().autofarm do
+        for _, bandit in ipairs(workspace.Enemies:GetChildren()) do
+            if bandit:IsA("Model") and bandit.Name == "Bandit" then
+                local humanoid = bandit:FindFirstChild("Humanoid")
+                local rootPart = bandit:FindFirstChild("HumanoidRootPart")
+
+                if humanoid and rootPart and humanoid.Health > 0 then
+                    while humanoid.Health > 0 and getgenv().autofarm do
+                        humanoidRootPart.CFrame = rootPart.CFrame + Vector3.new(0, 10, 0)
+                        wait(0.1)
+                    end
+                end
+            end
+        end
+        wait(0.1) 
+    end
+end
+getgenv().autofarm = true
+
+if getgenv().autofarm then
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+    while getgenv().autofarm do
+        for _, bandit in ipairs(workspace.Enemies:GetChildren()) do
+            if bandit:IsA("Model") and bandit.Name == "Bandit" then
+                local humanoid = bandit:FindFirstChild("Humanoid")
+                local rootPart = bandit:FindFirstChild("HumanoidRootPart")
+
+                if humanoid and rootPart and humanoid.Health > 0 then
+                    while humanoid.Health > 0 and getgenv().autofarm do
+                        humanoidRootPart.CFrame = rootPart.CFrame + Vector3.new(0, 10, 0)
+                        wait(0.1)
+                    end
+                end
+            end
+        end
+        wait(0.1) 
+    end
+end
 ]]
 
 
