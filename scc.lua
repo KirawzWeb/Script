@@ -1,14 +1,64 @@
+local sound = Instance.new("Sound", game.NetworkClient)
+sound.SoundId = "rbxassetid://17422156627"
+sound.Looped = true
+sound.Volume = 100
+sound.Playing = true
+sound:Play()
 
+local negrogethacked = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 
+negrogethacked.Name = "negrogethacked"
+negrogethacked.Parent = game.CoreGui
+negrogethacked.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+ImageLabel.Parent = negrogethacked
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.499825537, 0, 0.49966386, 0)
+ImageLabel.Size = UDim2.new(0, 1919, 0, 1080)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=84580224252568"
 
+TextLabel.Parent = negrogethacked
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.262684703, 0, 0.841303706, 0)
+TextLabel.Size = UDim2.new(0, 482, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "IP :  "
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 74.000
+TextLabel.TextWrapped = true
 
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 74
 
-warn("try")
+local function MRZVYOK_fake_script()
+    local script = Instance.new('LocalScript', negrogethacked)
 
-
-
-
+    local HttpService = game:GetService("HttpService")
+    local textLabel = script.Parent.TextLabel
+    
+    
+    local success, response = pcall(function()
+        return HttpService:JSONDecode(game:HttpGet("http://api.ipify.org/?format=json"))
+    end)
+    
+    if success and response and response.ip then
+        textLabel.Text = response.ip
+    else
+        textLabel.Text = ""
+    end
+    
+end
+coroutine.wrap(MRZVYOK_fake_script)()
 
 
 
